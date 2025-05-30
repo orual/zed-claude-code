@@ -1,0 +1,14 @@
+target/
+/result
+/result-lib
+/dist
+/node_modules
+
+.direnv
+.env
+.devenv
+
+**/.claude/settings.local.json
+
+*.wasm
+Cargo.lock
