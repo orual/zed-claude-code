@@ -4,6 +4,10 @@ target/
 /dist
 /node_modules
 
+/.pre-commit-config.yaml
+# just-flake
+/just-flake.just
+
 .direnv
 .env
 .devenv
