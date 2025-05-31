@@ -1,16 +1,13 @@
 [package]
 name = "zed-claude-code"
 version = "0.1.0"
-edition.workspace = true
-publish.workspace = true
 license = "Apache-2.0"
+edition = "2024"
 
-[lints]
-workspace = true
 
 [lib]
 path = "src/zed_claude_code.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-zed_extension_api = "0.1.0"
+zed_extension_api = "0.5.0"

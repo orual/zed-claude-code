@@ -15,4 +15,4 @@ target/
 **/.claude/settings.local.json
 
 *.wasm
-Cargo.lock
+#Cargo.lock
