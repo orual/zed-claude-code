@@ -12,7 +12,6 @@
     pre-commit-hooks-nix = {
       url = "github:cachix/pre-commit-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.nixpkgs-stable.follows = "nixpkgs";
     };
   };
 
@@ -27,7 +26,17 @@
         inputs.rust-flake.flakeModules.nixpkgs
       ];
       perSystem = { config, self', pkgs, lib, system, ... }: {
-        rust-project.crates."zed-claude-code" = {
+        rust-project.crates."claude-code" = {
+          crane.args = {
+            buildInputs = lib.optionals pkgs.stdenv.isDarwin (
+              with pkgs.darwin.apple_sdk.frameworks; [
+                IOKit
+              ]
+            );
+
+          };
+        };
+        rust-project.crates."claude-code-bridge" = {
           crane.args = {
             buildInputs = lib.optionals pkgs.stdenv.isDarwin (
               with pkgs.darwin.apple_sdk.frameworks; [

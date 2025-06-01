@@ -13,3 +13,11 @@ requires_argument = true
 [slash_commands.pick-one]
 description = "pick one of three options"
 requires_argument = true
+
+
+[context_servers.claude-code-mcp]
+name = "Claude Code (MCP)"
+
+
+[context_servers.lsp-context-view]
+name = "LSP Code View Context Server"

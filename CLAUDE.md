@@ -6,7 +6,7 @@ yo, welcome to the zed-claude code integration project. this guide helps you sta
 
 before diving in:
 
-1. [ ] **model check**: mention which model you are (e.g., "working with claude-3-opus")
+1. [ ] **model check**: mention which model you are (e.g., "working with claude-4-opus")
 2. [ ] **read the docs**: skim through the project knowledge files
 3. [ ] **explain first**: describe what you're about to do before coding
 4. [ ] **ask permission**: check if the approach sounds good before implementing
